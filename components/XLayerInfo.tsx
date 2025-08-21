@@ -40,22 +40,26 @@ export function XLayerInfo() {
           <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-50/80 to-purple-100/80 backdrop-blur-sm border border-indigo-200/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
             <div className="flex items-center gap-3 mb-4">
               <div className="p-3 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl">
-                <span className="text-white text-xl">🎯</span>
+                <span className="text-white text-xl">🏦</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900">迁移战略目标</h3>
+              <h3 className="text-xl font-bold text-gray-900">DeFi生态重点</h3>
             </div>
             <div className="space-y-3">
               <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
                 <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">集中流动性和开发资源</span>
+                <span className="text-gray-700 font-medium">去中心化金融协议开发</span>
               </div>
               <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
                 <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">提升OKB功能和效用</span>
+                <span className="text-gray-700 font-medium">现实世界资产(RWA)整合</span>
               </div>
               <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
                 <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">增强价值存储特性</span>
+                <span className="text-gray-700 font-medium">全球支付解决方案</span>
+              </div>
+              <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
+                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
+                <span className="text-gray-700 font-medium">生态基金与流动性激励</span>
               </div>
             </div>
           </div>
@@ -108,23 +112,149 @@ export function XLayerInfo() {
           <div className="p-3 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl">
             <span className="text-white text-2xl">🏗️</span>
           </div>
-          <h4 className="text-2xl font-bold text-blue-900">技术合作</h4>
+          <h4 className="text-2xl font-bold text-blue-900">技术架构与性能</h4>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* 技术栈可视化 */}
+        <div className="mb-8">
+          <h5 className="text-lg font-bold text-gray-800 mb-4">zkEVM Validium 架构层级</h5>
+          <div className="relative bg-white/40 rounded-2xl p-6 h-48">
+            <div className="absolute top-4 left-1/2 transform -translate-x-1/2 flex flex-col items-center space-y-4">
+              {/* Layer 1 - Ethereum */}
+              <div className="bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-6 py-2 rounded-lg text-sm font-bold animate-pulse">
+                以太坊 L1 (安全性验证)
+              </div>
+              {/* Arrow */}
+              <div className="text-2xl text-blue-500">↕️</div>
+              {/* Layer 2 - X Layer */}
+              <div className="bg-gradient-to-r from-blue-500 to-cyan-600 text-white px-6 py-2 rounded-lg text-sm font-bold animate-bounce">
+                X Layer zkEVM (执行层)
+              </div>
+              {/* Arrow */}
+              <div className="text-2xl text-green-500">↕️</div>
+              {/* Data Availability */}
+              <div className="bg-gradient-to-r from-green-500 to-teal-600 text-white px-6 py-2 rounded-lg text-sm font-bold">
+                链下数据存储 (Validium)
+              </div>
+            </div>
+            
+            {/* Performance indicators */}
+            <div className="absolute right-4 top-4 space-y-2">
+              <div className="flex items-center gap-2 text-xs">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-gray-700">5,000 TPS</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs">
+                <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                <span className="text-gray-700">近零 Gas</span>
+              </div>
+              <div className="flex items-center gap-2 text-xs">
+                <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+                <span className="text-gray-700">ZK 证明</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="grid md:grid-cols-3 gap-6 mb-6">
           <div className="p-4 bg-white/60 rounded-xl hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-2xl">🔷</span>
-              <p className="font-bold text-blue-800">与Polygon合作</p>
+              <p className="font-bold text-blue-800">Polygon CDK</p>
             </div>
-            <p className="text-blue-700 text-sm">基于Polygon技术栈打造zkEVM Layer 2网络</p>
+            <p className="text-blue-700 text-sm">基于最新Polygon链开发工具包</p>
+            <div className="mt-2 w-full bg-blue-200 rounded-full h-2">
+              <div className="bg-blue-500 h-2 rounded-full animate-pulse" style={{width: '90%'}}></div>
+            </div>
           </div>
           <div className="p-4 bg-white/60 rounded-xl hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
             <div className="flex items-center gap-3 mb-3">
               <span className="text-2xl">🔗</span>
               <p className="font-bold text-blue-800">以太坊兼容</p>
             </div>
-            <p className="text-blue-700 text-sm">完全兼容以太坊智能合约和开发工具</p>
+            <p className="text-blue-700 text-sm">100%兼容EVM智能合约</p>
+            <div className="mt-2 w-full bg-green-200 rounded-full h-2">
+              <div className="bg-green-500 h-2 rounded-full animate-pulse" style={{width: '100%'}}></div>
+            </div>
+          </div>
+          <div className="p-4 bg-white/60 rounded-xl hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="text-2xl">⚡</span>
+              <p className="font-bold text-blue-800">高性能</p>
+            </div>
+            <p className="text-blue-700 text-sm">5000 TPS + 极低延迟</p>
+            <div className="mt-2 w-full bg-yellow-200 rounded-full h-2">
+              <div className="bg-yellow-500 h-2 rounded-full animate-pulse" style={{width: '95%'}}></div>
+            </div>
+          </div>
+        </div>
+
+        {/* 性能对比图表 */}
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="p-4 bg-white/40 rounded-xl">
+            <h6 className="font-bold text-gray-800 mb-3">TPS 性能对比</h6>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">以太坊 L1</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-16 h-2 bg-gray-300 rounded-full">
+                    <div className="w-1 h-2 bg-gray-500 rounded-full"></div>
+                  </div>
+                  <span className="text-xs">15</span>
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">Polygon PoS</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-16 h-2 bg-blue-200 rounded-full">
+                    <div className="w-6 h-2 bg-blue-400 rounded-full"></div>
+                  </div>
+                  <span className="text-xs">7K</span>
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600 font-bold">X Layer</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-16 h-2 bg-emerald-200 rounded-full">
+                    <div className="w-12 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                  </div>
+                  <span className="text-xs font-bold">5K</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 bg-white/40 rounded-xl">
+            <h6 className="font-bold text-gray-800 mb-3">交易成本对比</h6>
+            <div className="space-y-3">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">以太坊 L1</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-16 h-2 bg-red-200 rounded-full">
+                    <div className="w-full h-2 bg-red-500 rounded-full"></div>
+                  </div>
+                  <span className="text-xs">$20+</span>
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600">Polygon PoS</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-16 h-2 bg-yellow-200 rounded-full">
+                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+                  </div>
+                  <span className="text-xs">$0.01</span>
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-gray-600 font-bold">X Layer</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-16 h-2 bg-green-200 rounded-full">
+                    <div className="w-1 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  </div>
+                  <span className="text-xs font-bold">≈$0</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

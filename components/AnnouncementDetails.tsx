@@ -85,13 +85,54 @@ export function AnnouncementDetails() {
           </div>
           
           <div className="p-6 bg-gradient-to-r from-cyan-100/90 to-teal-100/90 border-2 border-cyan-300/50 rounded-2xl backdrop-blur-sm animate-float">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 mb-4">
               <div className="p-2 bg-cyan-500 rounded-full">
                 <span className="text-white text-lg">📊</span>
               </div>
               <div>
                 <p className="font-bold text-cyan-800 text-sm">迁移进度</p>
                 <p className="text-cyan-700 text-sm">超过90%的以太坊L1上OKB已完成X Layer迁移</p>
+              </div>
+            </div>
+            
+            {/* 可视化进度条 */}
+            <div className="space-y-3">
+              <div className="flex justify-between text-xs text-cyan-700">
+                <span>已迁移</span>
+                <span>90%+</span>
+              </div>
+              <div className="w-full bg-cyan-200 rounded-full h-3 overflow-hidden">
+                <div className="h-full bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full animate-pulse shadow-lg" style={{width: '90%'}}>
+                  <div className="h-full bg-gradient-to-r from-white/30 to-transparent"></div>
+                </div>
+              </div>
+              <div className="flex justify-between text-xs text-cyan-600">
+                <span>🔥 已销毁: 65M+ OKB</span>
+                <span>💎 剩余: 21M OKB</span>
+              </div>
+            </div>
+            
+            {/* 里程碑图标 */}
+            <div className="flex justify-between items-center mt-4">
+              <div className="flex flex-col items-center">
+                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mb-1 animate-pulse">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="text-xs text-cyan-700">L1停止</span>
+              </div>
+              <div className="flex-1 h-0.5 bg-cyan-300 mx-2"></div>
+              <div className="flex flex-col items-center">
+                <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mb-1 animate-pulse">
+                  <span className="text-white text-xs">✓</span>
+                </div>
+                <span className="text-xs text-cyan-700">代币销毁</span>
+              </div>
+              <div className="flex-1 h-0.5 bg-cyan-300 mx-2"></div>
+              <div className="flex flex-col items-center">
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mb-1 animate-bounce">
+                  <span className="text-white text-xs">⏳</span>
+                </div>
+                <span className="text-xs text-cyan-700">合约升级</span>
               </div>
             </div>
           </div>
