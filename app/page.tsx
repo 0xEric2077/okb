@@ -2,6 +2,7 @@ import { Timeline } from '@/components/Timeline'
 import { ProcessSteps } from '@/components/ProcessSteps'
 import { AnnouncementDetails } from '@/components/AnnouncementDetails'
 import { XLayerInfo } from '@/components/XLayerInfo'
+import { MigrationFlow } from '@/components/MigrationFlow'
 
 export default function Home() {
   return (
@@ -36,6 +37,9 @@ export default function Home() {
         <div className="space-y-20">
           <div className="transform hover:scale-[1.02] transition-all duration-500">
             <AnnouncementDetails />
+          </div>
+          <div className="transform hover:scale-[1.02] transition-all duration-500">
+            <MigrationFlow />
           </div>
           <div className="transform hover:scale-[1.02] transition-all duration-500">
             <XLayerInfo />
