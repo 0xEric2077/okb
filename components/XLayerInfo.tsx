@@ -37,29 +37,100 @@ export function XLayerInfo() {
             </div>
           </div>
 
-          <div className="p-6 rounded-2xl bg-gradient-to-br from-indigo-50/80 to-purple-100/80 backdrop-blur-sm border border-indigo-200/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            <div className="flex items-center gap-3 mb-4">
+          <div className="p-8 rounded-2xl bg-gradient-to-br from-indigo-50/80 to-purple-100/80 backdrop-blur-sm border border-indigo-200/50 hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+            <div className="flex items-center gap-3 mb-6">
               <div className="p-3 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl">
                 <span className="text-white text-xl">🏦</span>
               </div>
-              <h3 className="text-xl font-bold text-gray-900">DeFi生态重点</h3>
+              <h3 className="text-xl font-bold text-gray-900">DeFi生态战略布局</h3>
             </div>
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
-                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">去中心化金融协议开发</span>
+            <div className="space-y-6">
+              {/* DeFi协议开发 */}
+              <div className="p-4 bg-white/70 rounded-xl border-l-4 border-indigo-500">
+                <h4 className="font-bold text-indigo-800 mb-3 flex items-center gap-2">
+                  <span className="text-lg">🚀</span>
+                  去中心化金融协议开发
+                </h4>
+                <p className="text-gray-700 text-sm mb-3 leading-relaxed">
+                  X Layer将成为下一代DeFi基础设施的核心，凭借5000 TPS的高性能和近零Gas费用，为开发者提供了构建复杂金融应用的理想环境。OKX正在积极招募顶级DeFi项目迁移或原生部署。
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="p-3 bg-indigo-50 rounded-lg">
+                    <p className="text-indigo-800 font-medium text-xs mb-1">核心协议类型</p>
+                    <p className="text-indigo-700 text-xs">AMM DEX、借贷协议、衍生品交易、收益聚合器</p>
+                  </div>
+                  <div className="p-3 bg-purple-50 rounded-lg">
+                    <p className="text-purple-800 font-medium text-xs mb-1">技术优势</p>
+                    <p className="text-purple-700 text-xs">高频交易支持、MEV保护、跨链互操作性</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
-                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">现实世界资产(RWA)整合</span>
+
+              {/* RWA整合 */}
+              <div className="p-4 bg-white/70 rounded-xl border-l-4 border-purple-500">
+                <h4 className="font-bold text-purple-800 mb-3 flex items-center gap-2">
+                  <span className="text-lg">🏢</span>
+                  现实世界资产(RWA)整合
+                </h4>
+                <p className="text-gray-700 text-sm mb-3 leading-relaxed">
+                  X Layer正在构建全球领先的RWA代币化平台，将房地产、商品、债券、股票等传统资产上链。通过与合规机构合作，为全球投资者提供24/7的传统资产交易服务。
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="p-3 bg-purple-50 rounded-lg">
+                    <p className="text-purple-800 font-medium text-xs mb-1">资产类别</p>
+                    <p className="text-purple-700 text-xs">房地产、贵金属、国债、企业债券、股票指数</p>
+                  </div>
+                  <div className="p-3 bg-indigo-50 rounded-lg">
+                    <p className="text-indigo-800 font-medium text-xs mb-1">合规框架</p>
+                    <p className="text-indigo-700 text-xs">KYC/AML、监管报告、托管服务、审计透明</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
-                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">全球支付解决方案</span>
+
+              {/* 支付解决方案 */}
+              <div className="p-4 bg-white/70 rounded-xl border-l-4 border-teal-500">
+                <h4 className="font-bold text-teal-800 mb-3 flex items-center gap-2">
+                  <span className="text-lg">💳</span>
+                  全球支付解决方案
+                </h4>
+                <p className="text-gray-700 text-sm mb-3 leading-relaxed">
+                  基于X Layer的支付基础设施正在重新定义跨境支付。通过集成稳定币、CBDC和传统法币，为企业和个人提供即时、低成本的全球支付服务，支持Web2到Web3的无缝过渡。
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="p-3 bg-teal-50 rounded-lg">
+                    <p className="text-teal-800 font-medium text-xs mb-1">支付场景</p>
+                    <p className="text-teal-700 text-xs">跨境汇款、商户支付、薪资发放、供应链金融</p>
+                  </div>
+                  <div className="p-3 bg-cyan-50 rounded-lg">
+                    <p className="text-cyan-800 font-medium text-xs mb-1">技术特性</p>
+                    <p className="text-cyan-700 text-xs">秒级确认、多币种支持、智能路由、隐私保护</p>
+                  </div>
+                </div>
               </div>
-              <div className="flex items-center gap-3 p-3 bg-white/60 rounded-lg hover:bg-white/80 transition-all duration-200">
-                <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">生态基金与流动性激励</span>
+
+              {/* 生态激励 */}
+              <div className="p-4 bg-white/70 rounded-xl border-l-4 border-emerald-500">
+                <h4 className="font-bold text-emerald-800 mb-3 flex items-center gap-2">
+                  <span className="text-lg">💰</span>
+                  生态基金与流动性激励
+                </h4>
+                <p className="text-gray-700 text-sm mb-3 leading-relaxed">
+                  OKX已承诺投入数亿美元用于X Layer生态建设，包括开发者赠款、流动性挖矿、用户奖励和战略投资。通过多层次的激励机制，吸引优质项目和活跃用户，快速建立网络效应。
+                </p>
+                <div className="grid md:grid-cols-3 gap-3">
+                  <div className="p-3 bg-emerald-50 rounded-lg">
+                    <p className="text-emerald-800 font-medium text-xs mb-1">开发者激励</p>
+                    <p className="text-emerald-700 text-xs">$50M+ 开发赠款</p>
+                  </div>
+                  <div className="p-3 bg-teal-50 rounded-lg">
+                    <p className="text-teal-800 font-medium text-xs mb-1">流动性挖矿</p>
+                    <p className="text-teal-700 text-xs">高APY奖励池</p>
+                  </div>
+                  <div className="p-3 bg-cyan-50 rounded-lg">
+                    <p className="text-cyan-800 font-medium text-xs mb-1">用户奖励</p>
+                    <p className="text-cyan-700 text-xs">交易返佣计划</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

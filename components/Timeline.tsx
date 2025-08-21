@@ -169,33 +169,6 @@ export function Timeline() {
             </div>
           ))}
         </div>
-        
-        {/* Enhanced supply change section */}
-        <div className="mt-12 p-8 bg-gradient-to-r from-emerald-100/90 to-teal-100/90 border-2 border-emerald-200/50 rounded-3xl backdrop-blur-sm hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="p-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-2xl animate-pulse-glow">
-              <span className="text-white text-2xl">📊</span>
-            </div>
-            <h4 className="text-2xl font-bold text-emerald-900">总供应量变化</h4>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-white/60 rounded-2xl hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-4 h-4 bg-gradient-to-r from-rose-400 to-red-500 rounded-full"></div>
-                <p className="font-bold text-emerald-800 text-lg">升级前</p>
-              </div>
-              <p className="text-emerald-700">以太坊L1可变总量 + 历史回购存量</p>
-            </div>
-            <div className="p-6 bg-white/60 rounded-2xl hover:bg-white/80 transition-all duration-300 transform hover:scale-105">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-4 h-4 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full"></div>
-                <p className="font-bold text-emerald-800 text-lg">升级后</p>
-              </div>
-              <p className="text-emerald-700">X Layer固定2100万总量（无增发销毁）</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

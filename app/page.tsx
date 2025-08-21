@@ -4,6 +4,7 @@ import { AnnouncementDetails } from '@/components/AnnouncementDetails'
 import { XLayerInfo } from '@/components/XLayerInfo'
 import { MigrationFlow } from '@/components/MigrationFlow'
 import { TokenomicsImpact } from '@/components/TokenomicsImpact'
+import { NewTokenomics } from '@/components/NewTokenomics'
 
 export default function Home() {
   return (
@@ -41,6 +42,9 @@ export default function Home() {
           </div>
           <div className="transform hover:scale-[1.02] transition-all duration-500">
             <TokenomicsImpact />
+          </div>
+          <div className="transform hover:scale-[1.02] transition-all duration-500">
+            <NewTokenomics />
           </div>
           <div className="transform hover:scale-[1.02] transition-all duration-500">
             <MigrationFlow />
